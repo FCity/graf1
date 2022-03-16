@@ -30,11 +30,7 @@ window.onload = () => {
   })
 
   function getResults(season) {
-    fetch(
-      `http://ergast.com/api/f1/${season}/results/1.json`,
-      {
-        mode: 'cors'
-      })
+    fetch(`http://ergast.com/api/f1/${season}/results/1.json`)
       .then(res => res.json())
       .then(data => {
         let raceWinners = []
