@@ -33,8 +33,7 @@ window.onload = () => {
     fetch(
       `http://ergast.com/api/f1/${season}/results/1.json`,
       {
-        mode: 'cors',
-        credentials: 'include'
+        mode: 'cors'
       })
       .then(res => res.json())
       .then(data => {
