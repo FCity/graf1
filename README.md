@@ -45,5 +45,5 @@ Mobile
 
 ## Links
 
-- Solution URL: [https://github.com/FCity/graf1](https://github.com/FCity/batt-man)
-- Live Site URL: [https://fcity.github.io/batt-man](https://fcity.github.io/batt-man)
+- Solution URL: [https://github.com/FCity/graf1](https://github.com/FCity/graf1)
+- Live Site URL: [https://fcity.github.io/graf1](https://fcity.github.io/graf1)
