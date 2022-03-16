@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# graF1
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What is it?
 
-## Available Scripts
+A frontend app that graphs the race winners of any Formula 1 season
+It makes use of the Ergast Formula 1 API
+Mobile-friendly
 
-In the project directory, you can run:
+## How it works
 
-### `npm start`
+Just select a year from the dropdown menu and get the results
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Keyboard shortcuts:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Shift: add focus on the dropdown menu
+- Enter: get results
 
-### `npm test`
+## Why I made it
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I wanted a visual and intuitive way to check some Formula 1 stats
+It was also a great opportunity to use the D3.js library
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- HTML5
+- CSS3
+- Javascript
+- D3.js
+- Ergast F1 API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Credits
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Ergast API
+- Wallpapercave.com
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Desktop
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Desktop view](./images/screenshot-desktop.jpg?raw=true)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Mobile
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Mobile view](./images/screenshot-mobile.jpg?raw=true)
 
-## Learn More
+## Links
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Solution URL: [https://github.com/FCity/graf1](https://github.com/FCity/batt-man)
+- Live Site URL: [https://fcity.github.io/batt-man](https://fcity.github.io/batt-man)

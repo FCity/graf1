@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Cantarell');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  color: #eee;
+  padding: .5em;
+}
+
+.container, #seasons, .btn {
+  font-family: Cantarell, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header h1 {
+  font-style: italic;
+  padding: .5em 0 .5em;
+}
+
+.form {
+  padding: .5em 0 .5em;
+}
+
+#seasons, .btn {
+  margin: .5em .25em;
+  padding: .25em;
+}
+
+.btn {
+  border: 0;
+  border-radius: .25em;
+  background-color: #f33;
+  color: #fff;
+}
+.btn:hover {
+  opacity: .9;
+}
+
+#graph {
+  display: none;
+  background-color: #eee;
+  border-radius: 1em;
+  margin: 2em 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-image: url('https://wallpapercave.com/wp/wp5499762.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    height: 100vh;
+  }
+
+  .container, .form {
+    text-align: center;
+    padding: 3em;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    padding: 0;
+  }
+
+  .form h3 {
+    font-size: 1.5rem;
+  }
+
+  #seasons, .btn {
+    font-size: 1.25rem;
+    margin: .5em .25em;
+    padding: .25em;
+  }
+
+  #graph {
+    margin: 1em 0;
+  }
+}
