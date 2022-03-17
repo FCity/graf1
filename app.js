@@ -36,7 +36,7 @@ window.onload = () => {
 
   // Call API and get results
   function getResults(season) {
-    fetch(`https://ergast.com/api/f1/${season}/results/1.json`)
+    fetch(`http://ergast.com/api/f1/${season}/results/1.json`)
       .then(res => res.json())
       .then(data => {
         let raceWinners = []
@@ -45,7 +45,6 @@ window.onload = () => {
         graph.innerHTML = ''
         drawGraph(raceWinners, season) 
       })
-      .catch(err => console.log(err))
   }
 
   function setWinners(data, raceWinners) {
