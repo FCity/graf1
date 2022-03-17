@@ -1,10 +1,13 @@
 window.onload = () => {
+  // DOM elements
   const seasonsMenu = document.querySelector('#seasons')
   const resultsBtn = document.querySelector('.btn')
   const graph = document.querySelector('#graph')
+  // Properties
   let screenWidth = window.innerWidth
   let season = 2021
 
+  // Fill dropdown menu
   for (let i = 2021; i >= 1950; i--) {
     let option = document.createElement('option')
     option.value = i
@@ -12,7 +15,9 @@ window.onload = () => {
     seasonsMenu.appendChild(option)
   }
 
+  // Autoset focus on dropdown menu
   seasonsMenu.focus()
+  // Add event listeners
   seasonsMenu.addEventListener('change', e => season = e.target.value)
   resultsBtn.addEventListener('click', () => getResults(season))
   window.addEventListener('resize', () => screenWidth = window.innerWidth)
@@ -29,18 +34,9 @@ window.onload = () => {
     }
   })
 
+  // Call API and get results
   function getResults(season) {
-    const headers = new Headers()
-    headers.append('Accept', 'application/json')
-
-    const init = {
-      method: 'GET',
-      headers,
-      mode: 'cors',
-      cache: 'default'
-    }
-
-    fetch(`http://ergast.com/api/f1/${season}/results/1.json`, init)
+    fetch(`https://ergast.com/api/f1/${season}/results/1.json`)
       .then(res => res.json())
       .then(data => {
         let raceWinners = []
@@ -53,7 +49,9 @@ window.onload = () => {
 
   function setWinners(data, raceWinners) {
     data.MRData.RaceTable.Races.forEach(race => {
+      // Get driver name
       let name = race.Results[0].Driver.familyName
+      // Check if driver's already on the list
       let racer = raceWinners.find(raceWinner => raceWinner.name == name)
       
       if (racer) {
@@ -70,6 +68,7 @@ window.onload = () => {
   }
 
   function drawGraph(raceWinners, season) {
+    // Tally total races for the season
     let totalRaces = 0
     raceWinners.forEach(raceWinner => totalRaces += raceWinner.wins)
 
