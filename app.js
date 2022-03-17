@@ -45,6 +45,7 @@ window.onload = () => {
         graph.innerHTML = ''
         drawGraph(raceWinners, season) 
       })
+      .catch(err => console.log(err))
   }
 
   function setWinners(data, raceWinners) {
